@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "schemaDownload": "apollo shema:download --endpoint=http://localhost:3002/graphql schema.graphql",
-    "codegen": "gql-gen --config codegen.yml"
+    "codegen": "graphql-codegen --watch"
   },
   "dependencies": {
     "@apollo/client": "^3.7.17",
@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "@graphql-codegen/cli": "^5.0.0",
+    "@graphql-codegen/client-preset": "^4.1.0",
     "@parcel/watcher": "^2.2.0",
     "graphql-codegen-typescript-client": "0.18.2",
     "graphql-codegen-typescript-common": "0.18.2",
